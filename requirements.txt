@@ -3,3 +3,5 @@ uvicorn
 requests
 SQLAlchemy
 pydantic
+httpie
+python-multipart # to handle form-encoded data or file uploads
