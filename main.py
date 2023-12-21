@@ -7,6 +7,8 @@ from pydantic import BaseModel
 from typing import Optional
 from random import randrange
 
+import uvicorn
+
 app = FastAPI()
 
 
@@ -112,3 +114,7 @@ def find_index_post(id):
         if p['id'] == id:
             return idx
         
+        
+if __name__ == '__main__':
+    uvicorn.run('main:app', reload=True)
+    
